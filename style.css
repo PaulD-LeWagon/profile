@@ -1,0 +1,160 @@
+body {
+  font-family: "Quicksand", Lato, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  background-color: #d9d9d9;
+  color: #353535;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  color: #284b63;
+}
+
+.profile {
+  text-align: center;
+}
+.profile .top.card {
+  background-image: url(./images/circuit-background.jpg);
+  background-position: top, center;
+}
+.profile img.img-round {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 30px auto;
+}
+.profile button {
+  font-size: 20px;
+  padding: 20px;
+  background-color: #9b111e;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  border-style: 1px solid black;
+}
+.profile button:hover {
+  background-color: #c41627;
+  color: #fff;
+}
+
+.bio {
+  text-align: justify;
+}
+.card h3 {
+  text-align: center;
+}
+
+.card {
+  background-color: #fff;
+  width: 700px;
+  margin: 25px auto;
+  padding: 25px 50px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(164, 74, 63, .4);
+}
+.card.links {
+  background-image: url(./images/circuit-background.jpg);
+  background-position: center, center;
+}
+.card.links h3 {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.list-inline {
+  margin: 0;
+  padding: 0;
+}
+.list-inline li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.card ul li a {
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 30px;
+  color: #3c6e71;
+}
+.card ul li a:hover {
+  color: rgba(164, 75, 63, 1.0);
+  font-weight: 500;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+
+  .card {
+    width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+  }
+  .card h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .card ul li a {
+    margin: 0 10px;
+    padding: 0;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .card {
+    width: 640px;
+    margin: 20px auto;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  body {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .profile .top.card {
+    border-bottom: solid 2px black;
+  }
+  .card.links {
+    border-top: solid 2px black;
+  }
+  .profile img.img-round {
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+  }
+  .profile button {
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .card {
+    border-radius: 0;
+    margin: 0;
+    padding: 15px;
+    box-shadow: none;
+  }
+  .card h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .card ul li a {
+    margin: 0 5px;
+    padding: 0;
+  }
+}
